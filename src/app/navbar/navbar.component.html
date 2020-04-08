@@ -1,0 +1,119 @@
+<nav class="navbar sticky-top navbar-light bg-light bg-faded " style=" background-color: #88a9e7">
+
+    <span class="navbar-text">
+        CONTACTO
+    </span>
+    <span class="navbar-text">
+        TELEFONO
+    </span>
+    <span class="navbar-text">
+        DIRECCION
+    </span>
+    <span class="navbar-text">
+        HORARIO
+    </span>
+
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" style="background-color: #88a9e7">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/favicon.png" width="50" height="50" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [routerLink]="['/servicios']" routerLinkActive="active"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Para el</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Regalo Original
+                        Cumpleaños</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">San Valentin </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [routerLink]="['/tienda']" routerLinkActive="active"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tienda
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Ramos']">Ramos de flores</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Centros de mesas</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Pack flores</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Invitaciones
+                        personalizadas</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Para ella</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Para el</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Regalo Original
+                        Cumpleaños</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">San Valentin </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Home']">Fiestas</a>
+                </div>
+            </li>
+
+
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [routerLink]="['/articulos']" routerLinkActive="active"
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorias
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['articulos']">Categorias</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/flores']">flores</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Decoracion']">Decoracion</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/flores']">flores</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Decoracion']">Decoracion</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/flores']">flores</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Galeria']">Galeria</a>
+                </div>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/Blog">Blog</a>
+
+                <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar articulo"
+               (keyup.enter)="buscarArticulo(buscarTexto.value)" #buscarTexto>
+                <button (click)="buscarArticulo(buscarTexto.value)" class="btn btn-outline-primary my-2 my-sm-0"
+                    type="button">Buscar</button>
+            </form> -->
+                <nav class="navbar navbar-light bg-primery">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+        </ul>
+
+        <span class="navbar-text">
+            <button type="button" class="btn btn-primary btn-sm">Iniciar sesion</button>
+            <button type="button" class="btn btn-secondary btn-sm" routerLinkActive="active"
+                [routerLink]="['/Home']">Registrate</button>
+
+        </span>
+
+
+    </div>
+
+</nav>
